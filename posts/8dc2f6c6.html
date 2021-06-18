@@ -1,0 +1,2500 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="l5vBARY4Edthuemwa9JDbqEGmhqH4SKJqmwMa1ysk2U">
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="VL3JGnOsfz">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-blog.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-blog.png?v=7.1.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="记录了html与css基础知识">
+<meta name="keywords" content="CSS,HTML">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML与CSS基础">
+<meta property="og:url" content="https://www.vigor666.com/posts/8dc2f6c6.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="记录了html与css基础知识">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/1568647071698.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E8%A7%A3%E5%86%B3%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/1568707605387.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/1568707815193.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%EF%BC%88float%EF%BC%89.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%EF%BC%88flex%EF%BC%89-1568601492476.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%EF%BC%88absolute%EF%BC%89.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80-1576421912980.png">
+<meta property="og:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%88%E5%B7%A6%E6%A0%8F%E5%9B%BA%E5%AE%9A%E5%8F%B3%E6%A0%8F%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%89.png">
+<meta property="og:updated_time" content="2021-06-15T16:11:55.941Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML与CSS基础">
+<meta name="twitter:description" content="记录了html与css基础知识">
+<meta name="twitter:image" content="https://www.vigor666.com/images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/1568647071698.png">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://www.vigor666.com/posts/8dc2f6c6">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>HTML与CSS基础 | Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-guestbook">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-comment"></i> <br>留言</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.vigor666.com/posts/8dc2f6c6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="00前的小老弟">
+      <meta itemprop="description" content="让兴趣变得更专业,让专业变得更兴趣">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">HTML与CSS基础
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-09 10:42:10" itemprop="dateCreated datePublished" datetime="2019-06-09T10:42:10+08:00">2019-06-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-06-16 00:11:55" itemprop="dateModified" datetime="2021-06-16T00:11:55+08:00">2021-06-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/HTML/" itemprop="url" rel="index"><span itemprop="name">HTML</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/posts/8dc2f6c6.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/8dc2f6c6.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/posts/8dc2f6c6.html" class="leancloud_visitors" data-flag-title="HTML与CSS基础">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">15k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">13 分钟</span>
+              
+            </div>
+          
+
+          
+            <div class="post-description">记录了html与css基础知识</div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="htmlhypertext-markup-language的发展"><a class="markdownIt-Anchor" href="#htmlhypertext-markup-language的发展"></a> HTML（Hypertext Markup Language）的发展</h2>
+<ul>
+<li>1993年6月：HTML第一个版本发布。</li>
+<li>1995年11月：HTML2.0</li>
+<li>1997年1月：HTML3.2（W3C推荐）</li>
+<li>1999年12月：HTML4.01（W3C推荐）</li>
+<li>2000年底：XHTML1.0（W3C推荐）</li>
+<li>2014年10月：HTML5（W3C推荐）</li>
+</ul>
+<h2 id="doctype"><a class="markdownIt-Anchor" href="#doctype"></a> doctype</h2>
+<p>为了让浏览器知道我们使用的HTML版本我们还需要在网页的最上边添加一个doctype声明，来告诉浏览器网页的版本。</p>
+<p><strong>html4</strong></p>
+<ul>
+<li>
+<p>过渡版</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>严格版</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>框架集</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"</span></span><br><span class="line"><span class="meta">"http://www.w3.org/TR/html4/frameset.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>xhtml1.0</strong></p>
+<ul>
+<li>
+<p>过渡版</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "</span></span><br><span class="line"><span class="meta">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>严格版</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"</span></span><br><span class="line"><span class="meta">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>框架集</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"</span></span><br><span class="line"><span class="meta">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>html5</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br></pre></td></tr></table></figure>
+<p>现在我们使用的都是 html5 的文档声明</p>
+<h2 id="meta"><a class="markdownIt-Anchor" href="#meta"></a> <code>&lt;meta&gt;</code></h2>
+<ul>
+<li>
+<p>作用：</p>
+<ul>
+<li>标签可提供有关页面的元信息，比如针对搜索引擎和更新频度的描述和关键词。</li>
+<li>标签位于文档的头部，不包含任何内容。 标签的属性定义了与文档相关联的名称/值对。</li>
+</ul>
+</li>
+<li>
+<p>meta的用法</p>
+<ul>
+<li>
+<p>设置页面的字符集</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>设置网页的描述</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">""</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>设置网页的关键字</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">""</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>请求的重定向</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"refresh"</span> <span class="attr">content</span>=<span class="string">"5;url=地址"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="实体"><a class="markdownIt-Anchor" href="#实体"></a> 实体</h2>
+<ul>
+<li>在HTML中预留了一些字符。</li>
+<li>这些预留字符是不能在网页中直接使用的。</li>
+<li>比如&lt;和&gt;,我们不能直接在页面中使用 <code>&lt;</code> 和 <code>&gt;</code> 号，因为浏览器会将它解析为html标签。</li>
+<li>为了可以使用这些预留字符，我们必须在html中使用字符实体。</li>
+<li>语法: &amp;实体名;</li>
+</ul>
+<p><strong>常见HTML字符实体</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">显示结果</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">实体名称</th>
+<th style="text-align:left">实体编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">空格</td>
+<td style="text-align:left"><code>&amp;nbsp;</code></td>
+<td style="text-align:left"><code>&amp;#160;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&lt;</td>
+<td style="text-align:left">小于号</td>
+<td style="text-align:left"><code>&amp;lt;</code></td>
+<td style="text-align:left"><code>&amp;#60;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&gt;</td>
+<td style="text-align:left">大于号</td>
+<td style="text-align:left"><code>&amp;gt;</code></td>
+<td style="text-align:left"><code>&amp;#62;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&amp;</td>
+<td style="text-align:left">和号</td>
+<td style="text-align:left"><code>&amp;amp;</code></td>
+<td style="text-align:left"><code>&amp;#38;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&quot;</td>
+<td style="text-align:left">引号</td>
+<td style="text-align:left"><code>&amp;quot;</code></td>
+<td style="text-align:left"><code>&amp;#34;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">’</td>
+<td style="text-align:left">撇号</td>
+<td style="text-align:left"><code>&amp;apos;</code> (IE不支持)</td>
+<td style="text-align:left"><code>&amp;#39;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">￠</td>
+<td style="text-align:left">分</td>
+<td style="text-align:left"><code>&amp;cent;</code></td>
+<td style="text-align:left"><code>&amp;#162;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">£</td>
+<td style="text-align:left">镑</td>
+<td style="text-align:left"><code>&amp;pound;</code></td>
+<td style="text-align:left"><code>&amp;#163;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">¥</td>
+<td style="text-align:left">人民币/日元</td>
+<td style="text-align:left"><code>&amp;yen;</code></td>
+<td style="text-align:left"><code>&amp;#165;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">€</td>
+<td style="text-align:left">欧元</td>
+<td style="text-align:left"><code>&amp;euro;</code></td>
+<td style="text-align:left"><code>&amp;#8364;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">§</td>
+<td style="text-align:left">小节</td>
+<td style="text-align:left"><code>&amp;sect;</code></td>
+<td style="text-align:left"><code>&amp;#167;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">©</td>
+<td style="text-align:left">版权</td>
+<td style="text-align:left"><code>&amp;copy;</code></td>
+<td style="text-align:left"><code>&amp;#169;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">®</td>
+<td style="text-align:left">注册商标</td>
+<td style="text-align:left"><code>&amp;reg;</code></td>
+<td style="text-align:left"><code>&amp;#174;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">™</td>
+<td style="text-align:left">商标</td>
+<td style="text-align:left"><code>&amp;trade;</code></td>
+<td style="text-align:left"><code>&amp;#8482;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">×</td>
+<td style="text-align:left">乘号</td>
+<td style="text-align:left"><code>&amp;times;</code></td>
+<td style="text-align:left"><code>&amp;#215;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">÷</td>
+<td style="text-align:left">除号</td>
+<td style="text-align:left"><code>&amp;divide;</code></td>
+<td style="text-align:left"><code>&amp;#247;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="选择器"><a class="markdownIt-Anchor" href="#选择器"></a> 选择器</h2>
+<h3 id="选择器selector"><a class="markdownIt-Anchor" href="#选择器selector"></a> 选择器（selector）</h3>
+<p>选择器会告诉浏览器：网页上的哪些元素需要设置什么样的样式。</p>
+<ol>
+<li><strong>元素选择器</strong><br>
+• 元素选择器（标签选择器），可以根据标签的名字来从页面中选取指定的元素。<br>
+• 语法：<strong>标签名</strong> { }<br>
+• 比如p则会选中页面中的所有p标签，h1会选中页面中的所有h1标签。</li>
+<li><strong>类选择器</strong><br>
+• 类选择器，可以根据元素的class属性值选取元素。<br>
+• 语法：<strong>.className</strong> { }<br>
+• 比如.hello会选中页面所有class属性为hello的元素。</li>
+<li><strong>ID选择器</strong><br>
+• ID选择器，可以根据元素的id属性值选取元素。<br>
+• 语法：<strong>#id</strong> { }<br>
+• 比如#box会选中页面中id属性值为box的元素，和class属性不同，id属性是不能重复的。</li>
+<li><strong>复合选择器</strong><br>
+• 复合选择器，可以同时使用多个选择器，这样可以选择同时满足多个选择器的元素。<br>
+• 语法：  <strong>选择器1选择器2</strong> {}<br>
+• 例如div.box1会选中页面中具有box1这个class的div元素。</li>
+<li><strong>群组选择器</strong><br>
+• 群组选择器，可以同时使用多个选择器，多个选择器将被同时应用指定的样式。<br>
+• 语法：<strong>选择器1, 选择器2, 选择器3</strong> { }<br>
+• 比如p,.hello,#box会同时选中页面中p元素，class为hello的元素，id为box的元素。</li>
+<li><strong>通用选择器</strong><br>
+• 通用选择器，可以同时选中页面中的所有<br>
+元素。<br>
+• 语法： ***** { }</li>
+<li><strong>后代选择器</strong><br>
+• 后代选择器可以根据标签的关系，为处在元素内部的代元素设置样式。<br>
+• 语法：<strong>祖先元素 后代元素 后代元素</strong> { }<br>
+• 比如p strong 会选中页面中所有的p元素内的strong元素。</li>
+</ol>
+<h3 id="伪类和伪元素"><a class="markdownIt-Anchor" href="#伪类和伪元素"></a> 伪类和伪元素</h3>
+<blockquote>
+<p>详见：<a href="https://segmentfault.com/a/1190000013737796" target="_blank" rel="noopener">前端面试题-伪类和伪元素</a> 和 <a href="https://segmentfault.com/a/1190000000484493" target="_blank" rel="noopener">详解 CSS 属性 - 伪类和伪元素的区别</a></p>
+</blockquote>
+<p>• 有时候，你需要选择本身没有标签，但是仍然易于识别的网页部位，比如段落首行或鼠标滑过的连接。CSS为他们提供一些选择器：伪类和伪元素。</p>
+<ul>
+<li>
+<p><strong>给链接定义样式</strong><br>
+有四个伪类可以让你根据访问者与该链接的交互方式，将链接设置成4种不同的状态。</p>
+<ul>
+<li>
+<p>正常链接:</p>
+<p>a:link</p>
+</li>
+<li>
+<p>访问过的链接</p>
+<p>a:visited（只能定义字体颜色）</p>
+</li>
+<li>
+<p>鼠标滑过的链接</p>
+<p><code>a:hover</code></p>
+</li>
+<li>
+<p>正在点击的链接</p>
+<p>a:active</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>其他</strong></p>
+<ul>
+<li>
+<p>获取焦点</p>
+<p>:focus</p>
+</li>
+<li>
+<p>指定元素前<br>
+:before</p>
+</li>
+<li>
+<p>指定元素后<br>
+:after</p>
+</li>
+<li>
+<p>选中的元素<br>
+::selection</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>给段落定义样式</strong></p>
+<ul>
+<li>首字母<br>
+:first-letter</li>
+<li>首行<br>
+:first-line</li>
+</ul>
+</li>
+<li>
+<p><strong>属性选择器</strong><br>
+• 属性选择器可以挑选带有特殊属性的标签。<br>
+• 语法:<br>
+[属性名]<br>
+[属性名=“属性值”]<br>
+[属性名~=“属性值”]<br>
+[属性名|=“属性值”]<br>
+[属性名^=“属性值”]<br>
+[属性名$=“属性值”]<br>
+[属性名*=“属性值”]</p>
+</li>
+<li>
+<p><strong>子元素选择器</strong><br>
+• 子元素选择器可以给另一个元素的子元素设置样式。<br>
+• 语法：<strong>父元素 &gt; 子元素</strong> {}<br>
+• 比如body &gt; h1将选择body子标签中的所<br>
+有h1标签。</p>
+</li>
+<li>
+<p><strong>其他子元素选择器</strong></p>
+<ul>
+<li>
+<p>选择第一个子标签</p>
+<p>:first-child</p>
+</li>
+<li>
+<p>选择最后一个子标签<br>
+:last-child</p>
+</li>
+<li>
+<p>选择指定位置的子元素<br>
+:nth-child</p>
+</li>
+<li>
+<p>选择指定类型的子元素<br>
+:first-of-type<br>
+:last-of-type<br>
+:nth-of-type</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>兄弟选择器</strong><br>
+• 除了根据祖先父子关系，还可以根据兄弟关系查找元素。<br>
+• 语法:</p>
+<ul>
+<li>查找后边一个兄弟元素<br>
+<strong>兄弟元素 + 兄弟元素</strong> {}</li>
+<li>查找后边所有的兄弟元素<br>
+<strong>兄弟元素 ~ 兄弟元素</strong> {}</li>
+</ul>
+</li>
+<li>
+<p><strong>否定伪类</strong><br>
+• 否定伪类可以帮助我们选择不是其他东西的某件东西。<br>
+• 语法: 比如p:not(.hello)表示选择所有的p元素但是class为hello的除外。</p>
+</li>
+</ul>
+<h3 id="继承"><a class="markdownIt-Anchor" href="#继承"></a> 继承</h3>
+<p>• 就像父亲的财产会遗传给儿子一样，在CSS中祖先元素的样式同样也会被子元素继承。<br>
+• 继承是指应用在一个标签上的那些CSS样式会同时被应用到其内嵌标签上。<br>
+• 比如为父元素设置了字体颜色，子元素也会应用上相同的颜色。<br>
+• 当然并不是所有的样式都会被继承</p>
+<h3 id="选择器的权重"><a class="markdownIt-Anchor" href="#选择器的权重"></a> 选择器的权重</h3>
+<p>在页面中使用CSS选择器选中元素时，经常都是一个元素同时被多个选择器选中。<br>
+• 比如：<br>
+– body h1<br>
+– h1<br>
+• 上边的两个选择器都会选择h1元素，如果两个选择器设置的样式不一致那还好不会产生冲突，但是如果两个选择器设置的是同一个样式，这样h1到底要应用那个样式呢？CSS中会默认使用权重较大的样式，权重又是如何计算的呢？</p>
+<h4 id="权重的计算"><a class="markdownIt-Anchor" href="#权重的计算"></a> 权重的计算</h4>
+<p>不同的选择器有不同的权重值：（权重：高 --&gt; 低）</p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th style="text-align:center">!important</th>
+<th style="text-align:center"><a href="#css%E7%9A%84%E5%86%85%E8%81%94%E3%80%81%E5%A4%96%E8%81%94%E3%80%81%E5%B5%8C%E5%A5%97%E5%86%99%E6%B3%95">内联样式</a></th>
+<th style="text-align:center">id选择器</th>
+<th style="text-align:center">类、属性、伪类选择器</th>
+<th style="text-align:center">元素选择器</th>
+<th style="text-align:center">通配符、子选择器、相邻选择器</th>
+<th style="text-align:center"><strong>继承</strong>的样式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>权重</td>
+<td style="text-align:center">最高</td>
+<td style="text-align:center">1000</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">没有权重</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>属性选择器指的是:根据元素的属性及属性值来选择元素，比如button的type属性等。伪类选择器: :active :focus等选项。</p>
+<p>伪元素选择器： :before :after 等</p>
+</blockquote>
+<p>计算权重需要将一个样式的全部选择器相加，比如上边的body h1的权重是20，h1的权重是10，所以第一个选择器设置的样式会优先显示。</p>
+<h4 id="权重规则总结"><a class="markdownIt-Anchor" href="#权重规则总结"></a> 权重规则总结:</h4>
+<blockquote>
+<ol>
+<li>**!**important 优先级最高，但也会被权重高的 **!**important 所覆盖</li>
+<li><strong>内联</strong>样式总会<strong>覆盖</strong>外部样式表的任何样式(除了!important)</li>
+<li>单独使用一个选择器的时候，不能跨等级使css规则生效</li>
+<li>如果两个权重不同的选择器作用在同一元素上，权重值高的css规则生效</li>
+<li>如果两个相同权重的选择器作用在同一元素上：以后面出现的选择器为最后规则.</li>
+<li>权重相同时，与元素距离近的选择器生效</li>
+<li>继承的样式是没有权重的，父类的 !important是对父类样式优先级最高，但对子类是没有权重的</li>
+</ol>
+</blockquote>
+<h4 id="权重规则"><a class="markdownIt-Anchor" href="#权重规则"></a> 权重规则</h4>
+<ol>
+<li>
+<p><strong>不推荐使用!important</strong></p>
+<p>不推荐使用<code>!important</code>，因为<code>!important</code>根本没有结构与上下文可言，并且很多时候权重的问题，就是因为不知道在哪里定义了一个<code>!important</code>而导致的。</p>
+<p><strong>覆盖 !important:</strong></p>
+<p>虽然我们应该尽量避免使用 !important ，但你应该知道如何覆盖 !important，加点权重就可以实现，codepen的<a href="https://codepen.io/OBKoro1/pen/ZoVxgQ" target="_blank" rel="noopener">demo</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//!important 优先级最高，但也会被权重高的 !important所覆盖</span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"a"</span> <span class="attr">class</span>=<span class="string">"a"</span>&gt;</span>aaa<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">#a&#123;</span><br><span class="line">background: blue  !important;  /* id的 !important 覆盖class的 !important*/</span><br><span class="line">&#125;</span><br><span class="line">.a&#123;</span><br><span class="line">background: red  !important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>内联样式总会覆盖外部样式表的任何样式,会被<code>!important</code>覆盖</strong></p>
+</li>
+<li>
+<p><strong>单独使用一个选择器的时候，不能跨等级使css规则生效</strong></p>
+<p><strong>无论多少个class组成的选择器，都没有一个ID选择器权重高</strong>。类似的，无论多少个元素组成的选择器，都没有一个class选择器权重高、无论多少个ID组成的选择器，都没有行内样式权重高。</p>
+<p>codepen的<a href="https://codepen.io/OBKoro1/pen/ZoVxgQ" target="_blank" rel="noopener">demo</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在demo中使用了11个class组成一个选择器，最后还是一个ID选择器，设置的样式生效。</span><br></pre></td></tr></table></figure>
+<p>所以权重是在双方处于同一等级的情况下，才开始对比。</p>
+</li>
+<li>
+<p><strong>如果两个权重不同的选择器作用在同一元素上，权重值高的css规则生效</strong></p>
+<p>选择器可能会包含一个或者多个与权重相关的计算点，若经过权重值计算得到的权重值越大，则认为这个选择器的权重高。举一个简单的栗子:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.test #test&#123; &#125; // id 100+class 10=110;</span><br><span class="line">.test #test span&#123;&#125; // id 100+class 10+span 1=111;</span><br><span class="line">.test #test .sonClass&#123;&#125; // id 100+class 10+class 10=120; //生效</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>如果两个相同权重的选择器作用在同一元素上：以后面出现的选择器为最后规则.</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test"</span> <span class="attr">id</span>=<span class="string">"test"</span>&gt;</span></span><br><span class="line">                      <span class="tag">&lt;<span class="name">span</span> &gt;</span>啦啦啦<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">#test span&#123;</span><br><span class="line">color:blue;</span><br><span class="line">&#125;</span><br><span class="line">#app span&#123; // 生效 因为后面出现</span><br><span class="line">color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>权重相同时，与元素距离近的选择器生效</strong></p>
+<p>比如不同的style表，head头部等,来看下面的栗子：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#content h1 &#123; // css样式表中</span><br><span class="line">padding: 5px;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">#content h1 &#123; // html头部 因为html头部离元素更近一点，所以生效</span></span><br><span class="line"><span class="undefined">padding: 10px;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>继承的样式是没有权重的</strong>，父类的 !important是对父类样式优先级最高，但对子类是没有权重的</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span> &#123; <span class="attribute">color</span>: black <span class="meta">!important</span>; &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">span</span> &#123; <span class="attribute">color</span>: blue; &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span> <span class="selector-tag">span</span> &#123; <span class="attribute">color</span>: yellow; &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">  <span class="selector-id">#s1</span> &#123; <span class="attribute">color</span>: orange; &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span> <span class="selector-class">.c1</span> &#123; <span class="attribute">color</span>: red; &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"s1"</span> <span class="attr">class</span>=<span class="string">"c1"</span>&gt;</span>文字<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- “文字” 的颜色是 橙色（orange） --&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>参考</p>
+<blockquote>
+<p><a href="https://segmentfault.com/a/1190000014947296" target="_blank" rel="noopener">你对CSS权重真的足够了解吗？</a></p>
+<p><a href="https://segmentfault.com/a/1190000012941923" target="_blank" rel="noopener">CSS中选择器的权重值</a></p>
+</blockquote>
+<h2 id="css的内联-外联-嵌套写法"><a class="markdownIt-Anchor" href="#css的内联-外联-嵌套写法"></a> css的内联、外联、嵌套写法</h2>
+<p>1，内联样式写法</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"color:red;"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>2，外联样式写法</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"你的css文件地址"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="tag">&lt;/<span class="name">link</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>3，嵌套样式写法</p>
+<p>在html界面 <code>&lt;head&gt;</code> 里面写一下代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-class">.p</span> &#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="文本标签"><a class="markdownIt-Anchor" href="#文本标签"></a> 文本标签</h2>
+<h3 id="em-和-strong"><a class="markdownIt-Anchor" href="#em-和-strong"></a> <code>&lt;em&gt;</code> 和 <code>&lt;strong&gt;</code></h3>
+<p>em标签用于表示一段内容中的着重点。<br>
+• strong标签用于表示一个内容的重要性。<br>
+• 这两个标签可以单独使用，也可以一起使用。<br>
+• 通常em显示为斜体，而strong显示为粗体。</p>
+<h3 id="i-和-b"><a class="markdownIt-Anchor" href="#i-和-b"></a> <code>&lt;i&gt;</code> 和 <code>&lt;b&gt;</code></h3>
+<p>• i标签会使文字变成斜体。<br>
+• b标签会使文字变成粗体。<br>
+• 这两个标签和em和strong类似，但是这两个标签没有语义。<br>
+• 所以根据html5标准，当我们只想设置文本特殊显示，而不需要强调内容时就可以使用i和b标签</p>
+<h3 id="small"><a class="markdownIt-Anchor" href="#small"></a> <code>&lt;small&gt;</code></h3>
+<p>• small标签表示细则一类的旁注，通常包括免责声明、注意事项、法律限制、版权信息等。<br>
+• 浏览器在显示small标签时会显示一个比父元素小的字号。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">small</span>&gt;</span>&amp;copy;2016 尚硅谷. 保留所有权利.<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="cite"><a class="markdownIt-Anchor" href="#cite"></a> <code>&lt;cite&gt;</code></h3>
+<p>• 使用cite标签可以指明对某内容的引用或参考。例如，戏剧、文章或图书的标题，歌曲、电影、照片或雕塑的名称等。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">cite</span>&gt;</span>《七龙珠》<span class="tag">&lt;/<span class="name">cite</span>&gt;</span>讲的是召唤神龙的故事。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="blockquote-和-q"><a class="markdownIt-Anchor" href="#blockquote-和-q"></a> <code>&lt;blockquote&gt;</code> 和 <code>&lt;q&gt;</code></h3>
+<p>• blockquote和q表示标记引用的文本。<br>
+• blockquote用于长引用，q用于短引用。<br>
+• 在两个标签中还可以使用cite属性来表示引用的地址。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">孟子曾经说过：</span><br><span class="line"><span class="tag">&lt;<span class="name">blockquote</span>&gt;</span>天将降大任于是人也...<span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line">他说的真对啊！</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>孔子曾经说过：<span class="tag">&lt;<span class="name">q</span>&gt;</span>学而时习之不亦说乎<span class="tag">&lt;/<span class="name">q</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="sup-和-sub"><a class="markdownIt-Anchor" href="#sup-和-sub"></a> <code>&lt;sup&gt;</code>  和 <code>&lt;sub&gt;</code></h3>
+<p>• sup和sub用于定义上标和下标。<br>
+• 上标主要用于表示类似于103中的3。<br>
+• 下标则用于表示类似余H2O中的2。</p>
+<h3 id="ins-和-del"><a class="markdownIt-Anchor" href="#ins-和-del"></a> <code>&lt;ins&gt;</code> 和 <code>&lt;del&gt;</code></h3>
+<p>• ins表示插入的内容，显示时通常会加上 下划线。<br>
+• del表示删除的内容，显示时通常会加上 删除线。</p>
+<h3 id="code-和-pre"><a class="markdownIt-Anchor" href="#code-和-pre"></a> <code>&lt;code&gt;</code> 和 <code>&lt;pre&gt;</code></h3>
+<p>• 如果你的内容包含代码示例或文件名，就 可以使用code元素。</p>
+<p>• pre元素表示的是预格式化文本，可以使用 pre包住code来表示一段代码。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">code</span>&gt;</span></span><br><span class="line">  function fun()&#123;</span><br><span class="line">  alert("hello");</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">code</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="有序列表"><a class="markdownIt-Anchor" href="#有序列表"></a> 有序列表</h3>
+<p>• 使用ol和li来创建一个有序列表。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="无序列表"><a class="markdownIt-Anchor" href="#无序列表"></a> 无序列表</h3>
+<p>• 使用ul和li来创建一个无序列表。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="定义列表"><a class="markdownIt-Anchor" href="#定义列表"></a> 定义列表</h3>
+<p>• 使用dl、dd、dt来创建一个定义列表。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>定义项1<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>定义描述1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>定义项2<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>定义描述2<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>定义项3<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>定义描述3<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="文本格式化"><a class="markdownIt-Anchor" href="#文本格式化"></a> 文本格式化</h2>
+<h3 id="单位"><a class="markdownIt-Anchor" href="#单位"></a> 单位</h3>
+<p>• <strong>px</strong><br>
+– 如果我们将一个图片放大的话，我们会发现一个图片是有一个一个的小色块构成的，这一个小色块就是一个像素，也就是1px，对于不同的显示器来说一个像素的大小是不同的。<br>
+• <strong>百分比</strong><br>
+– 也可以使用一个百分数来表示一个大小，百分比是相对于父元素来说的，如果父元素使用的大小是16px，则100%就是16px，200%就是32px。<br>
+• <strong>em</strong><br>
+– em和百分比类似，也是相对于父元素说的，1em就相当于100%，2em相当于200%，1.5em相当于150%。</p>
+<h3 id="颜色"><a class="markdownIt-Anchor" href="#颜色"></a> 颜色</h3>
+<p>• 在CSS中可以直接使用颜色的关键字来代表一种颜色。<br>
+• 17中颜色<br>
+– aqua、black、blue、fuchsia、gray、green、lime、maroon、navy、olive、orange、purple、red、silver、teal、white、yellow。<br>
+• 还有147种svg颜色，这里就不一 一列举了</p>
+<h3 id="十六进制颜色"><a class="markdownIt-Anchor" href="#十六进制颜色"></a> 十六进制颜色</h3>
+<p>• 用的最多的颜色是十六进制符号。一个颜色值，比如：#6600FF实际上包含了三组十六进制的数字。<br>
+• 上边的例子中66代表红色的浓度，00代表绿色的浓度，FF代表了蓝色的浓度。最后的颜色是由这些指定浓度的红绿蓝混合而成的。<br>
+• 如果每一组数中的两个数字都相同，就可以把十六进制的数字缩短为只有3个字符，如将**#6600FF<strong>缩短为</strong>#60F**。</p>
+<h3 id="rgb值"><a class="markdownIt-Anchor" href="#rgb值"></a> RGB值</h3>
+<p>• 也可以使用计算机中常用的RGB值来表示颜色。可以使用0<sub>255的数值，也可以使用0%</sub>100%的百分比数。<br>
+– RGB(100%,0%,0%)<br>
+– RGB(0,255,0)<br>
+• 第一个数表示红色的浓度，第二个数表示绿色浓度，第三个数表示蓝色的浓度。</p>
+<h3 id="rgba"><a class="markdownIt-Anchor" href="#rgba"></a> RGBA</h3>
+<p>• RGBA表示一个颜色和RGB类似，只不过比RGB多了一个A（alpha）来表示透明度，透明度需要一个0-1的值。0表示完全透明，1表示完全不透明。<br>
+– RGBA(255,100,5,0.5)</p>
+<h3 id="文字大小"><a class="markdownIt-Anchor" href="#文字大小"></a> 文字大小</h3>
+<p>• font-size用来指定文字的大小。</p>
+<h3 id="字体一"><a class="markdownIt-Anchor" href="#字体一"></a> 字体(一)</h3>
+<p>• 通过font-family可以指定标签中文字使用的字体。<br>
+• 例如：<code>p{font-family:Arial}</code></p>
+<p>​	– 上边这行代码指定了p标签中使用名为arial作为字体<br>
+• 一般来说只有用户计算机中安装了我们指定的字体时，它才会显示，否则这行代码是没有意义的。</p>
+<h3 id="字体二"><a class="markdownIt-Anchor" href="#字体二"></a> 字体(二)</h3>
+<p>• 通过font-family可以同时指定多个字体。<br>
+• 例如：<code>p{font-family:Arial , Helvetica , sans-serif}</code><br>
+• 如上我实际上指定了三种字体，那么到底使用的是哪个呢？浏览器会优先使用第一个，如果没有找到则使用第二个，以此类推。<br>
+• 这里面sans-serif并不是指的具体某一个字体。而是一类字体。</p>
+<h3 id="字体分类"><a class="markdownIt-Anchor" href="#字体分类"></a> 字体分类</h3>
+<p>• serif（衬线字体）<br>
+• sans-serif（非衬线字体）<br>
+• monospace （等宽字体）<br>
+• cursive （草书字体）<br>
+• fantasy （虚幻字体）<br>
+• 以上这些分类都是一些大的分类，并没有涉及具体的类型，如果将字体指定为这些格式，浏览器会自己选择指定类型的字体。</p>
+<h3 id="斜体和粗体"><a class="markdownIt-Anchor" href="#斜体和粗体"></a> 斜体和粗体</h3>
+<p>• font-style用来指定文本的斜体。<br>
+– 指定斜体：font-style:italic<br>
+– 指定非斜体：font-style:normal<br>
+• font-weight用来指定文本的粗体。<br>
+– 指定粗体：font-weight:bold<br>
+– 指定非粗体：font-weight:normal</p>
+<h3 id="小型大写字母"><a class="markdownIt-Anchor" href="#小型大写字母"></a> 小型大写字母</h3>
+<p>• font-variant属性可以将字母类型设置为小型大写。在该样式中，字母看起来像是稍微缩小了尺寸的大写字母。<br>
+– <strong>font-variant: small-caps</strong></p>
+<h3 id="字体属性的简写"><a class="markdownIt-Anchor" href="#字体属性的简写"></a> 字体属性的简写</h3>
+<p>• font可以一次性同时设置多个字体的样式。<br>
+• 语法：<br>
+– font:加粗 斜体 小型大写 大小/行高 字体<br>
+• 这里前边几个加粗、斜体和小型大写的顺序无所谓，也可以不写，但是大小和字体必须写且必须写到后两个。</p>
+<h3 id="行间距"><a class="markdownIt-Anchor" href="#行间距"></a> 行间距</h3>
+<p>• line-height用于设置行高，行高越大则行间距越大。<br>
+• 行间距 = line-height – font-size</p>
+<h3 id="大写化"><a class="markdownIt-Anchor" href="#大写化"></a> 大写化</h3>
+<p>• text-transform样式用于将元素中的字母全都变成大小写。<br>
+– 大写：text-transform:uppercase<br>
+– 小写：text-tansform:lowercase<br>
+– 首字母大写：text-transform:capitalize<br>
+– 正常：text-transform:none</p>
+<h3 id="文本的修饰"><a class="markdownIt-Anchor" href="#文本的修饰"></a> 文本的修饰</h3>
+<p>• text-decoration属性，用来给文本添加各种修饰。通过它可以为文本的上方、下方或者中间添加线条。<br>
+• 可选值：<br>
+– underline<br>
+– overline<br>
+– line-through<br>
+– none</p>
+<h3 id="字母间距和单词间距"><a class="markdownIt-Anchor" href="#字母间距和单词间距"></a> 字母间距和单词间距</h3>
+<p>• letter-spacing用来设置字符之间的间距。<br>
+• word-spacing用来设置单词之间的间距。<br>
+• 这两个属性都可以直接指定一个长度或百分数作为值。正数代表的是增加距离，而负数代表减少距离。</p>
+<h3 id="对齐文本"><a class="markdownIt-Anchor" href="#对齐文本"></a> 对齐文本</h3>
+<p>• text-align用于设置文本的对齐方式。<br>
+• 可选值：<br>
+– left：左对齐<br>
+– right：右对齐<br>
+– justify：两边对齐<br>
+– center：居中对齐</p>
+<h3 id="首行缩进"><a class="markdownIt-Anchor" href="#首行缩进"></a> 首行缩进</h3>
+<p>• text-indent用来设置首行缩进。<br>
+• 该样式需要指定一个长度，并且只对第一行生效。</p>
+<h2 id="盒子模型"><a class="markdownIt-Anchor" href="#盒子模型"></a> 盒子模型</h2>
+<p>盒子模型<br>
+• 一个盒子我们会分成几个部分：<br>
+– 内容区(content)<br>
+– 内边距(padding)<br>
+– 边框(border)<br>
+– 外边距(margin)</p>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/1568647071698.png" alt="盒子模型"></p>
+<h3 id="内容区"><a class="markdownIt-Anchor" href="#内容区"></a> 内容区</h3>
+<p>• 内容区指的是盒子中放置内容的区域，也就是元素中的文本内容，子元素都是存在于内容区中的。<br>
+• 如果没有为元素设置内边距和边框，则内容区大小默认和盒子大小是一致的。<br>
+• 通过width和height两个属性可以设置内容区的大小。<br>
+• width和height属性<strong>只适用于块元素</strong>。</p>
+<h3 id="内边距"><a class="markdownIt-Anchor" href="#内边距"></a> 内边距</h3>
+<p>• 顾名思义，内边距指的就是元素内容区与边框以内的空间。<br>
+• <strong>默认情况下width和height不包含padding的大小</strong>。<br>
+• 使用padding属性来设置元素的内边距。<br>
+• 例如：<br>
+– padding:10px 20px 30px 40px<br>
+– 这样会设置元素的上、右、下、左四个方向的内边距。<br>
+• padding:10px 20px 30px;<br>
+– 分别指定上、左右、下四个方向的内边距<br>
+• padding:10px 20px;<br>
+– 分别指定上下、左右四个方向的内边距<br>
+• padding:10px;<br>
+– 同时指定上左右下四个方向的内边距<br>
+• 同时在css中还提供了padding-top、padding-right、paddingright、padding-bottom分别用来指定四个方向的内边距。</p>
+<h3 id="边框"><a class="markdownIt-Anchor" href="#边框"></a> 边框</h3>
+<p>• 可以在元素周围创建边框，边框是元素可见框的最外部。<br>
+• 可以使用border属性来设置盒子的边框：<br>
+– border:1px red solid;<br>
+– 上边的样式分别指定了边框的宽度、颜色和样式。<br>
+• 也可以使用border-top/left/right/bottom分别指定上右下左四个方向的边框。<br>
+• 和padding一样，默认width和height并包括边框的宽度。</p>
+<h3 id="边框的样式"><a class="markdownIt-Anchor" href="#边框的样式"></a> 边框的样式</h3>
+<p>• 边框可以设置多种样式：<br>
+– none（没有边框）<br>
+– dotted（点线）<br>
+– dashed（虚线）<br>
+– solid（实线）<br>
+– double（双线）<br>
+– groove（槽线）<br>
+– ridge（脊线）<br>
+– inset（凹边）<br>
+– outset（凸边）</p>
+<h3 id="外边距"><a class="markdownIt-Anchor" href="#外边距"></a> 外边距</h3>
+<p>• 外边距是元素边框与周围元素相距的空间。<br>
+• 使用margin属性可以设置外边距。<br>
+• 用法和padding类似，同样也提供了四个方向的margin-top/right/bottom/left。<br>
+• 当将左右外边距设置为auto时，浏览器会将左右外边距设置为相等，所以这行代码<strong>margin:0 auto可以使元素居中</strong>。</p>
+<h3 id="display"><a class="markdownIt-Anchor" href="#display"></a> display</h3>
+<p>• 我们不能为行内元素设置width、height、margin-top和margin-bottom。<br>
+• 我们可以通过修改display来修改元素的性质。<br>
+• 可选值：<br>
+– block：设置元素为块元素<br>
+– inline：设置元素为行内元素<br>
+– inline-block：设置元素为行内块元素<br>
+– none：隐藏元素（元素将在页面中完全消失）</p>
+<h3 id="visibility"><a class="markdownIt-Anchor" href="#visibility"></a> visibility</h3>
+<p>• visibility属性主要用于元素是否可见。<br>
+• 和display不同，使用visibility隐藏一个元素，隐藏后其在文档中所占的位置会依然保持，不会被其他元素覆盖。<br>
+• 可选值：<br>
+– visible：可见的<br>
+– hidden：隐藏的</p>
+<h3 id="overflow"><a class="markdownIt-Anchor" href="#overflow"></a> overflow</h3>
+<p>• 当相关标签里面的内容超出了样式的宽度和高度是，就会发生一些奇怪的事情，浏览器会让内容溢出盒子。<br>
+• 可以通过overflow来控制内容溢出的情况。<br>
+• 可选值：<br>
+– visible：默认值<br>
+– scroll：添加滚动条<br>
+– auto：根据需要添加滚动条<br>
+– hidden：隐藏超出盒子的内容</p>
+<h3 id="文档流"><a class="markdownIt-Anchor" href="#文档流"></a> 文档流</h3>
+<p>• 文档流指的是文档中可现实的对象在排列时所占用的位置。<br>
+• 将窗体自上而下分成一行行，并在每行中按从左至右的顺序排放元素，即为文档流。<br>
+• 也就是说在文档流中元素默认会紧贴到上一个元素的右边，如果右边不足以放下元素，元素则会另起一行，在新的一行中继续从左至右摆放。<br>
+• 这样一来每一个块元素都会另起一行，那么我们如果想在文档流中进行布局就会变得比较麻烦。</p>
+<h3 id="浮动"><a class="markdownIt-Anchor" href="#浮动"></a> 浮动</h3>
+<p>• 所谓浮动指的是使元素脱离原来的文本流，在父元素中浮动起来。<br>
+• 浮动使用float属性。<br>
+• 可选值：<br>
+– none：不浮动<br>
+– left：向左浮动<br>
+– right：向右浮动<br>
+• 块级元素和行内元素都可以浮动，当一个<strong>行内元素浮动</strong>以后将会自动<strong>变为一个块级元素</strong>。<br>
+• 当一个块级元素浮动以后，宽度会默认被内容撑开，所以当漂浮一个块级元素时我们都会为其指定一个宽度。</p>
+<p>• 当一个元素浮动以后，其下方的元素会上移。元素中的内容将会围绕在元素的周围。<br>
+• 浮动会使元素完全脱离文本流，也就是不再在文档中在占用位置。<br>
+• 元素设置浮动以后，会一直向上漂浮直到遇到父元素的边界或者其他浮动元素。<br>
+• 元素浮动以后即完全脱离文档流，这时不会再影响父元素的高度。也就是浮动元素不会撑开父元素。<br>
+• 浮动元素默认会变为块元素，即使设置display:inline以后其依然是个块元素。</p>
+<p><strong>浮动会造成高度塌陷问题</strong>，如下：</p>
+<p>红色 div 是蓝色 div 的父元素，由于蓝色 div设置了左浮动，脱离了文档流，导致父元素高度塌陷</p>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7.png" alt="高度塌陷"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box3"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-class">.box1</span>&#123;</span></span><br><span class="line"><span class="undefined">	border: 10px red solid;</span></span><br><span class="line"><span class="undefined">	overflow: hidden;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-class">.box2</span>&#123;</span></span><br><span class="line"><span class="undefined">	width: 100px;</span></span><br><span class="line"><span class="undefined">	height: 100px;</span></span><br><span class="line"><span class="undefined">	background-color: blue;</span></span><br><span class="line"><span class="undefined">	float: left;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-class">.box3</span>&#123;</span></span><br><span class="line"><span class="undefined">	 height: 100px;</span></span><br><span class="line"><span class="undefined">	 background-color: yellow;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>解决：</p>
+<p>根据W3C的标准，在页面中元素都一个隐含的属性叫做Block Formatting Context，简称BFC（详见<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context" target="_blank" rel="noopener">块格式化上下文</a>），该属性可以设置打开或者关闭，默认是关闭的。<br>
+当开启元素的BFC以后，元素将会具有如下的特性：<br>
+1.父元素的垂直外边距不会和子元素重叠	<br>
+2.开启BFC的元素不会被浮动元素所覆盖<br>
+3.开启BFC的元素可以包含浮动的子元素<br>
+如何开启元素的BFC<br>
+1.设置元素浮动</p>
+<p>​       使用这种方式开启，虽然可以撑开父元素，但是会导致父元素的宽度丢失而且使用这种方式也会导致下边的     元素上移，不能解决问题<br>
+​	2.设置元素绝对定位<br>
+​	3.设置元素为inline-block</p>
+<pre><code>	- 可以解决问题，但是会导致宽度丢失，不推荐使用这种方式
+4.将元素的overflow设置为一个非visible的值
+</code></pre>
+<p>推荐方式：将overflow设置为hidden是副作用最小的开启BFC的方式。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&#123;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​	<img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E8%A7%A3%E5%86%B3%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7.png" alt="解决高度塌陷"></p>
+<h3 id="清除浮动"><a class="markdownIt-Anchor" href="#清除浮动"></a> 清除浮动</h3>
+<p>• clear属性可以用于清除元素周围的浮动对元素的影响。<br>
+• 也就是元素不会因为上方出现了浮动元素而改变位置。<br>
+• 可选值：<br>
+– left：忽略左侧浮动<br>
+– right：忽略右侧浮动<br>
+– both：忽略全部浮动<br>
+– none：不忽略浮动，默认值</p>
+<h3 id="定位"><a class="markdownIt-Anchor" href="#定位"></a> 定位</h3>
+<p>• position属性可以控制Web浏览器如何以及在何处显示特定的元素。<br>
+• 可以使用position属性把一个元素放置到网页中的任何位置。<br>
+• 可选值：<br>
+– static<br>
+– relative<br>
+– absolute<br>
+– fixed</p>
+<h4 id="相对定位relative"><a class="markdownIt-Anchor" href="#相对定位relative"></a> 相对定位(relative)</h4>
+<p>• 每个元素在页面的文档流中都有一个自然位置。相对于这个位置对元素进行移动就称为相对定位。<strong>周围的元素完全不受此影响</strong>。<br>
+• 当将position属性设置为relative时，则开启了元素的相对定位。<br>
+• 当开启了相对定位以后，可以使用top、right、bottom、left四个属性对元素进行定位。</p>
+<p><strong>相对定位的特点</strong><br>
+• 如果不设置元素的偏移量，元素位置不会发生改变。<br>
+• 相对定位<strong>不会</strong>使元素<strong>脱离文本流</strong>。元素在文本流中的位置不会改变，在文档流原先的位置遗留空白区域。<br>
+• 相对定位不会改变元素原来的特性。<br>
+• 相对定位会使元素的层级提升，使元素可以覆盖文本流中的元素。</p>
+<p>• <strong>定位的起始位置为此元素原先在文档流的位置</strong>。</p>
+<h4 id="绝对定位absolute"><a class="markdownIt-Anchor" href="#绝对定位absolute"></a> 绝对定位(absolute)</h4>
+<p>• 绝对定位指使元素相对于<strong>html元素</strong>或<strong>离他最近的祖先定位元素进行定位</strong>。如果他<strong>没有给left、right、top和bottom设置值</strong>，<strong>并且他的所有祖先元素都没有设置定位</strong>，则他保持在<strong>自然位置</strong><br>
+• 当将position属性设置为absolute时，则开启了元素的绝对定位。<br>
+• 当开启了绝对定位以后，可以使用top、right、bottom、left四个属性对元素进行定位。</p>
+<p><strong>绝对定位的特点</strong><br>
+• 绝对定位会使元素完全脱离文本流。<br>
+• 绝对定位的块元素的宽度会被其内容撑开。<br>
+• 绝对定位会使行内元素变成块元素。<br>
+• <strong>一般</strong>使用绝对定位时会同时为<strong>其父元素</strong>指定一个<strong>相对定位</strong>，以确保元素可以<strong>相对于父元素进行定位</strong>。</p>
+<h4 id="固定定位fixed"><a class="markdownIt-Anchor" href="#固定定位fixed"></a> 固定定位(fixed)</h4>
+<p>• 固定定位的元素会被锁定在屏幕的某个位置上，当访问者滚动网页时，固定元素会在屏幕上保持不动。<br>
+• 当将position属性设置为fixed时，则开启了元素的固定定位。<br>
+• 当开启了固定定位以后，可以使用top、right、bottom、left四个属性对元素进行定位。<br>
+• 固定定位的其他特性和绝对定位类似。</p>
+<p>• <strong>元素的位置相对于浏览器窗口是固定位置</strong>。</p>
+<h4 id="静态定位static"><a class="markdownIt-Anchor" href="#静态定位static"></a> 静态定位(static)</h4>
+<p>HTML元素的默认值，不受top、bottom、left、right属性影响，元素出现在正常的文档流中</p>
+<h4 id="粘性定位sticky"><a class="markdownIt-Anchor" href="#粘性定位sticky"></a> 粘性定位(sticky)</h4>
+<p>MDN描述：盒位置根据正常流计算(这称为正常流动中的位置)，然后相对于该元素在流中的 flow root（BFC）和 containing block（最近的块级祖先元素）定位。在所有情况下（即便被定位元素为 <code>table 时</code>），该元素定位均不对后续元素造成影响。当元素 B 被粘性定位时，后续元素的位置仍按照 B 未定位时的位置来确定。<code>position: sticky</code>对 <code>table</code> 元素的效果与 <code>position: relative</code>相同。</p>
+<p>该定位依赖于自身的top、left、bottom、right阀值，所以必须设置其中之一的值sticky才会有效，否则，如果该元素<strong>不为 table 元素</strong>时，表现为<strong>静态定位</strong>（static），如果该元素为 <strong>table 元素</strong>时，表现为<strong>相对定位</strong>（relative）。（此处的表现效果的运行环境：Chrome 76.0.3809.100）</p>
+<p>效果：元素在视口没有滚动到设定的阀值时，它会表现为static定位（如果为 <strong>table</strong> 元素则表现为 <strong>relative</strong> 定位），当元素被滚动到阀值时，它不会越过阀值，而是表现为fixed定位。<br>
+举个🌰，假设设定了position:sticky; top:20px; 那么该元素初始布局时会按static定位，如果初始的定位在视口的top值小于20px，则它立马就会表现为top：20px的fixed定位；或者初始布局的视口top值大于20px，它正常布局，当滚动窗口时，一旦使它top值到达或者小于20px时，它表现为top：20px的fixed定位，直到它的父元素的底部和它自生底部重合，它就会黏在父元素底部被滚动走</p>
+<h3 id="z-index"><a class="markdownIt-Anchor" href="#z-index"></a> z-index</h3>
+<p>• 当元素开启定位以后就可以设置z-index这个属性。<br>
+• 这个属性可以提升定位元素所在的层级。<br>
+• z-index可以指定一个整数作为参数，值越大元素显示的优先级越高，也就是z-index值较大的元素会显示在网页的最上层。</p>
+<h2 id="设置元素的背景"><a class="markdownIt-Anchor" href="#设置元素的背景"></a> 设置元素的背景</h2>
+<h3 id="background-color"><a class="markdownIt-Anchor" href="#background-color"></a> background-color</h3>
+<p>• background-color属性用来为元素设置背景颜色。<br>
+• 需要指定一个颜色值，当指定了一个颜色以后，整个元素的可见区域都会使用这个颜色作为背景色。<br>
+• 如果不设置背景颜色，元素默认背景颜色为透明，实际上会显示父元素的背景颜色。</p>
+<h3 id="background-image"><a class="markdownIt-Anchor" href="#background-image"></a> background-image</h3>
+<p>• background-image可以为元素指定背景图片。<br>
+• 和background-color类似，这不过这里使用的是一个图片作为背景。<br>
+• 需要一个url地址作为参数，url地址需要指向一个外部图片的路径<br>
+• 例如：<br>
+background-image: url(1.jpg)</p>
+<h3 id="background-repeat"><a class="markdownIt-Anchor" href="#background-repeat"></a> background-repeat</h3>
+<p>• background-repeat用于控制背景图片的重复方式。<br>
+• 如果只设置背景图片默认背景图片将会使用平铺的方式，可以通过该属性进行修改。<br>
+• 可选值：<br>
+– repeat：默认值，图片左右上下平铺<br>
+– no-repeat：只显示图片一次，不会平铺<br>
+– repeat-x：沿x轴水平平铺一张图片<br>
+– repeat-y：沿y轴水平平铺一张图片</p>
+<h3 id="background-position"><a class="markdownIt-Anchor" href="#background-position"></a> background-position</h3>
+<p>• background-position用来精确控制背景图片在元素中的位置。<br>
+• 可以通过三种方式来确定图片在水平方向和垂直方向的起点。<br>
+– 关键字：top right bottom left center<br>
+– 百分比<br>
+– 数值</p>
+<h3 id="background-attachment"><a class="markdownIt-Anchor" href="#background-attachment"></a> background-attachment</h3>
+<p>• background-attachment用来设置背景图片是否随页面滚动。<br>
+• 可选值：<br>
+– scroll：随页面滚动<br>
+– fixed：不随页面滚动</p>
+<h3 id="background"><a class="markdownIt-Anchor" href="#background"></a> background</h3>
+<p>• background是背景的简写属性，通过这个属性可以一次性设置多个样式，而且样式的顺序没有要求。<br>
+• 例如：<br>
+background: green url(1.jpg) no-repeat center center fixed;</p>
+<h3 id="css-sprite"><a class="markdownIt-Anchor" href="#css-sprite"></a> CSS Sprite</h3>
+<p>• CSS Sprites是一种网页图片应用处理方式。<br>
+• 通过这种方式我们可以将网页中的零星图片集中放到一张大图上。<br>
+• 这样一来，一次请求便可以同时加载多张图片，大大提高了图片的加载效率。</p>
+<h2 id="表格"><a class="markdownIt-Anchor" href="#表格"></a> 表格</h2>
+<p>• 在Web的历史中，HTML的表格发挥了极大的作用。最初创建表格就是为了以表格的形式显示数据，后来表格变成了一个极受欢迎的布局工具。<br>
+• 但是有了CSS以后，CSS在布局网页方面实际上会更出色，所以现在我们使用表格的作用只有一个，就是用来表示格式化的数据。<br>
+• HTML中的表格可以很复杂，但是通常情况下我们不需要创建过于复杂的表格。</p>
+<h3 id="table-tr-th-td"><a class="markdownIt-Anchor" href="#table-tr-th-td"></a> table、tr、th、td</h3>
+<p>• 使用table标签创建一个表格。<br>
+• tr表示表格中的一行。<br>
+• tr中可以编写一个或多个th或td。<br>
+• th表示表头。<br>
+• td表示表格中的一个单元格。</p>
+<h3 id="caption-thead-tbody-tfoot"><a class="markdownIt-Anchor" href="#caption-thead-tbody-tfoot"></a> caption、thead、tbody、tfoot</h3>
+<p>• caption表示表格的标题。<br>
+• thead表示表格的头部。<br>
+• tbody表示表格的主体。<br>
+• tfoot表示表格的底部。</p>
+<h3 id="合并单元格"><a class="markdownIt-Anchor" href="#合并单元格"></a> 合并单元格</h3>
+<p>• 合并单元格指将两个或两个以上的单元格合并为一个单元格。<br>
+• 合并单元格可以通过在th或td中设置属性来完成。<br>
+• 横向合并<br>
+– colspan<br>
+• 纵向合并<br>
+– rowspan</p>
+<h3 id="表格的样式"><a class="markdownIt-Anchor" href="#表格的样式"></a> 表格的样式</h3>
+<p>• 之前学习的很多属性都可以用来设置表格的样式，比如color可以用来设置文本的颜色。padding可以设置内容和表格边框的距离。<br>
+• text-align：设置文本的水平对齐。<br>
+• vertical-align：设置文本的垂直对齐。<br>
+– 可选值：top、baseline、middle、bottom<br>
+• border-spacing：边框间距<br>
+• border-collapse：合并边框<br>
+– collapse：合并边框<br>
+– separate：不合并边框</p>
+<h2 id="表单"><a class="markdownIt-Anchor" href="#表单"></a> 表单</h2>
+<p>表单可以将用户填写的信息提交的服务器<br>
+• 例子：</p>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/1568707605387.png" alt="1568707605387"></p>
+<h3 id="表单项"><a class="markdownIt-Anchor" href="#表单项"></a> 表单项</h3>
+<p>文本框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"name"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>密码框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"pwd"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>多选框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"sports"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>单选框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"gender"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>提交按钮</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>下拉列表</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">option</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/1568707815193.png" alt="1568707815193"></p>
+<h4 id="input"><a class="markdownIt-Anchor" href="#input"></a> input</h4>
+<p>• input是我们使用的最多的表单项，它可以根据不同的type属性呈现不同的状态。<br>
+• type属性可选值：<br>
+– text：文本框<br>
+– password：密码框<br>
+– submit：提交按钮<br>
+– radio：单选按钮<br>
+– checkbox：多选框<br>
+– reset ：重置按钮</p>
+<h4 id="select-option"><a class="markdownIt-Anchor" href="#select-option"></a> select、option</h4>
+<p>• select用于创建一个下拉列表。<br>
+• option表示下拉列表中的列表项。<br>
+• optgroup用于为列表项分组。</p>
+<h4 id="textarea"><a class="markdownIt-Anchor" href="#textarea"></a> textarea</h4>
+<p>• textarea用来创建一个文本域，实际效果和文本框类似，只是可以输入多行数据。<br>
+• 可用属性：<br>
+– cols：文本域的列数<br>
+– rows：文本域的行数</p>
+<h4 id="fieldset-legend-label"><a class="markdownIt-Anchor" href="#fieldset-legend-label"></a> fieldset、legend、label</h4>
+<p>• fieldset用来为表单项进行分组。<br>
+• legend用于指定每组的名字。<br>
+• label标签用来为表单项定义描述文字。</p>
+<h2 id="css-布局"><a class="markdownIt-Anchor" href="#css-布局"></a> CSS 布局</h2>
+<h3 id="圣杯布局三栏中间自适应两边固定"><a class="markdownIt-Anchor" href="#圣杯布局三栏中间自适应两边固定"></a> 圣杯布局（三栏中间自适应两边固定）</h3>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%EF%BC%88float%EF%BC%89.png" alt="圣杯布局（float）"></p>
+<p><strong>实现原理(float 实现)</strong></p>
+<p>html代码中，middle部分首先要放在container的最前部分，然后是left，right</p>
+<ol>
+<li>
+<p>将三者都设置 <code>float:left</code>, <code>position:relative</code> (因为相对定位后面会用到）</p>
+</li>
+<li>
+<p>middle设置 <code>width:100%</code> 占满一行</p>
+</li>
+<li>
+<p>此时middle占满一行，所以要把 left 标签拉到 middle 标签所在行的最左边，使用 <code>margin-left:-100%</code></p>
+<p>（<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin-left" target="_blank" rel="noopener">margin-left</a> 百分比的值，是指最近的块容器的宽度 <em>width</em> 的百分比，关于 margin-left 的负值与 float: left 搭配使用，为什么会使元素换行，详见 <a href="https://www.cnblogs.com/LiveWithIt/p/6024864.html" target="_blank" rel="noopener">探究负边距（negative margin）原理</a> ）；</p>
+</li>
+<li>
+<p>这时 left 标签拉回到 middle 标签所在行的最左边，但会覆盖 middle 标签内容的左端，要把middle 标签内容拉出来，所以在<strong>外围container加上 <code>padding:0 210px</code></strong></p>
+</li>
+<li>
+<p>middle 标签内容拉出来了，但 left 标签也跟着出来了，所以要还原，就对 left 标签使用相对定位 <code>left:-210px</code></p>
+</li>
+<li>
+<p>同理，right 标签要拉到 middle 标签所在行的最右边，使用 <code>margin-left:-210px</code>，<code>right:-210px</code></p>
+</li>
+</ol>
+<p><strong>不足：</strong> 「圣杯布局」存在宽度过小导致布局混乱的缺陷。</p>
+<p><strong>实现代码(float 实现)</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">// 运行环境 Chrome 75.0.3770.100， Windows 10.0</span><br><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en-US"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>圣杯布局<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        body &#123;</span></span><br><span class="line"><span class="css">            <span class="comment">/* 2*left(这里为container的padding)+right：210*2+200 */</span></span></span><br><span class="line"><span class="undefined">            min-width: 620px;</span></span><br><span class="line"><span class="undefined">            text-align: center;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#demo</span> &#123;</span></span><br><span class="line"><span class="undefined">            margin: auto;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#header</span>, <span class="selector-id">#footer</span> &#123;</span></span><br><span class="line"><span class="undefined">            height: 50px;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#aaa</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#container</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>; <span class="comment">/*利用bfc特性避免了高度塌陷，并且帮助实现左右栏等高布局*/</span></span></span><br><span class="line"><span class="undefined">            margin: 10px 0;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">padding</span><span class="selector-pseudo">:0</span> 210<span class="selector-tag">px</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#middle</span>, <span class="selector-id">#left</span>, <span class="selector-id">#right</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">float</span><span class="selector-pseudo">:left</span>;</span></span><br><span class="line"><span class="css">				    <span class="selector-tag">padding-bottom</span>: 10000<span class="selector-tag">px</span>; <span class="comment">/*实现左右栏等高布局*/</span></span></span><br><span class="line"><span class="css">				    <span class="selector-tag">margin-bottom</span>: <span class="selector-tag">-10000px</span>; <span class="comment">/*与padding-bottom抵消，实现左右栏等高布局*/</span></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#left</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">left</span><span class="selector-pseudo">:-210px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">width</span><span class="selector-pseudo">:200px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">margin-left</span><span class="selector-pseudo">:-100</span>%;</span></span><br><span class="line"><span class="undefined">            background-color: red;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#right</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="undefined">            background-color: green;</span></span><br><span class="line"><span class="undefined">            width: 200px;</span></span><br><span class="line"><span class="undefined">            margin-left: -200px;</span></span><br><span class="line"><span class="undefined">            right: -210px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#middle</span> &#123;</span></span><br><span class="line"><span class="undefined">            background-color: blue;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">width</span><span class="selector-pseudo">:100</span>%;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">header</span> <span class="attr">id</span>=<span class="string">"header"</span>&gt;</span>头部<span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 一般主内容区域为重要部分，所以把 middle 放在最前面，优先加载 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"middle"</span>&gt;</span> </span><br><span class="line">                middle 主内容区域<span class="tag">&lt;<span class="name">br</span>&gt;</span>middle 主内容区域<span class="tag">&lt;<span class="name">br</span>&gt;</span>middle 主内容区域<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">                middle 主内容区域<span class="tag">&lt;<span class="name">br</span>&gt;</span>middle 主内容区域<span class="tag">&lt;<span class="name">br</span>&gt;</span>middle 主内容区域<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"left"</span>&gt;</span></span><br><span class="line">                left<span class="tag">&lt;<span class="name">br</span>&gt;</span>左侧边栏区域</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"right"</span>&gt;</span></span><br><span class="line">                right<span class="tag">&lt;<span class="name">br</span>&gt;</span>右侧边栏区域</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">footer</span> <span class="attr">id</span>=<span class="string">"footer"</span>&gt;</span>底部<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong><a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank" rel="noopener">flex</a> 实现</strong>：</p>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%EF%BC%88flex%EF%BC%89-1568601492476.png" alt="圣杯布局（flex）"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Flex 实现圣杯布局<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    html,</span></span><br><span class="line"><span class="undefined">    body &#123;</span></span><br><span class="line"><span class="undefined">    display: flex;</span></span><br><span class="line"><span class="undefined">    flex-direction: column;</span></span><br><span class="line"><span class="undefined">    min-height: 600px;</span></span><br><span class="line"><span class="undefined">    height: 100%;</span></span><br><span class="line"><span class="undefined">    font-size: 28px;</span></span><br><span class="line"><span class="undefined">    font-weight: bolder;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    header,</span></span><br><span class="line"><span class="undefined">    footer &#123;</span></span><br><span class="line"><span class="undefined">    height: 150px;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span>: <span class="selector-id">#666</span>;</span></span><br><span class="line"><span class="undefined">    display: flex;</span></span><br><span class="line"><span class="undefined">    justify-content: center;</span></span><br><span class="line"><span class="undefined">    align-items: center;</span></span><br><span class="line"><span class="undefined">    flex: none;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-class">.content</span> &#123;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">flex</span>: 1; <span class="comment">/* 高度自适应 */</span></span></span><br><span class="line"><span class="undefined">    display: flex;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    nav,</span></span><br><span class="line"><span class="undefined">    aside &#123;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span>: <span class="selector-id">#eb6f43</span>;</span></span><br><span class="line"><span class="undefined">    flex: 0 1 200px;</span></span><br><span class="line"><span class="undefined">    display: flex;</span></span><br><span class="line"><span class="undefined">    justify-content: center;</span></span><br><span class="line"><span class="undefined">    align-items: center;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    main &#123;</span></span><br><span class="line"><span class="undefined">    display: flex;</span></span><br><span class="line"><span class="undefined">    justify-content: center;</span></span><br><span class="line"><span class="undefined">    align-items: center;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">flex</span>: 1; <span class="comment">/* 宽度自适应 */</span></span></span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span>: <span class="selector-id">#d6d6d6</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    nav &#123;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">order</span>: <span class="selector-tag">-1</span>; <span class="comment">/* 调整顺序在main前面 */</span></span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">    header</span><br><span class="line">  <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span>&gt;</span>main<span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">nav</span>&gt;</span>nav<span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">aside</span>&gt;</span>aside<span class="tag">&lt;/<span class="name">aside</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">    footer</span><br><span class="line">  <span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>absolute实现</strong>：</p>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%EF%BC%88absolute%EF%BC%89.png" alt="圣杯布局（absolute）"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en-US"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>双飞翼布局<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="css">        <span class="selector-class">.header</span>, <span class="selector-class">.footer</span> &#123;</span></span><br><span class="line"><span class="undefined">            height: 50px;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#aaa</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.wrapper</span> &#123;</span></span><br><span class="line"><span class="undefined">            position: relative; </span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.main</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:0</span> 100<span class="selector-tag">px</span>;</span></span><br><span class="line"><span class="undefined">            background-color: blue;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.left</span> &#123;</span></span><br><span class="line"><span class="undefined">            position: absolute;</span></span><br><span class="line"><span class="undefined">            left: 0;</span></span><br><span class="line"><span class="undefined">            top: 0;</span></span><br><span class="line"><span class="undefined">            background-color: red;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.right</span> &#123;</span></span><br><span class="line"><span class="undefined">            position: absolute;</span></span><br><span class="line"><span class="undefined">            right: 0;</span></span><br><span class="line"><span class="undefined">            top: 0;</span></span><br><span class="line"><span class="undefined">            background-color: green;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.left</span>, <span class="selector-class">.right</span> &#123;</span></span><br><span class="line"><span class="undefined">            width: 80px;</span></span><br><span class="line"><span class="undefined">            height: 100%;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrapper"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span></span><br><span class="line">            main<span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">            绝对定位实现圣杯布局</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span></span><br><span class="line">            left</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span></span><br><span class="line">            right</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="双飞翼布局三栏中间自适应两边固定"><a class="markdownIt-Anchor" href="#双飞翼布局三栏中间自适应两边固定"></a> 双飞翼布局（三栏中间自适应两边固定）</h3>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80-1576421912980.png" alt="双飞翼布局"></p>
+<p><strong>实现原理</strong></p>
+<p>html代码中，middle部分首先要放在container的最前部分，然后是left，right</p>
+<ol>
+<li>将三者都设置 <code>float:left</code></li>
+<li>middle设置 <code>width:100%</code> 占满一行</li>
+<li>此时middle占满一行，所以要把left拉到middle所在行的最左边，使用 <code>margin-left:-100%</code>，同理right使用 <code>margin-left:-200px</code></li>
+<li>此时middle的内容被覆盖，要把middle的内容拉出来，除了使用外围container的padding，还可以考虑使用margin，给middle增加一个内层div – middle_content, 然后设置 <code>margin:0 210px</code></li>
+</ol>
+<p><strong>不足</strong> : 「双飞翼布局」增加了 DOM 树的层级，因此也会增加 浏览器渲染引擎构建布局树时的计算消耗.</p>
+<p><strong>圣杯与双飞翼的区别是</strong>：圣杯布局是<strong>使用外围container的padding</strong>，双飞翼布局是<strong>给middle增加一个内层div – middle_content, 然后设置 margin，并且没有使用相对定位（relative）</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en-US"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>双飞翼布局<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        body &#123;</span></span><br><span class="line"><span class="css">            <span class="comment">/* 2*left(这里为container的padding)+right：210*2+200 */</span></span></span><br><span class="line"><span class="undefined">            min-width: 620px;</span></span><br><span class="line"><span class="undefined">            text-align: center;;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#header</span>, <span class="selector-id">#footer</span> &#123;</span></span><br><span class="line"><span class="undefined">            height: 50px;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#aaa</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#container</span> &#123;</span></span><br><span class="line"><span class="undefined">            overflow: hidden;</span></span><br><span class="line"><span class="undefined">            margin: 10px 0;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#middle</span>, <span class="selector-id">#left</span>, <span class="selector-id">#right</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">float</span><span class="selector-pseudo">:left</span>;</span></span><br><span class="line"><span class="css">				    <span class="selector-tag">padding-bottom</span>: 10000<span class="selector-tag">px</span>; <span class="comment">/*实现左右栏等高布局*/</span></span></span><br><span class="line"><span class="css">				    <span class="selector-tag">margin-bottom</span>: <span class="selector-tag">-10000px</span>; <span class="comment">/*与padding-bottom抵消，实现左右栏等高布局*/</span></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#left</span> &#123;</span></span><br><span class="line"><span class="undefined">            background-color: red;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">width</span><span class="selector-pseudo">:200px</span>;</span></span><br><span class="line"><span class="undefined">            margin-left: -100%;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#right</span> &#123;</span></span><br><span class="line"><span class="undefined">            background-color: green;</span></span><br><span class="line"><span class="undefined">            width: 200px;</span></span><br><span class="line"><span class="undefined">            margin-left: -200px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#middle</span> &#123;</span></span><br><span class="line"><span class="undefined">            width: 100%;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#middle_content</span> &#123;</span></span><br><span class="line"><span class="undefined">            background-color: blue;</span></span><br><span class="line"><span class="undefined">            margin: 0 210px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">header</span> <span class="attr">id</span>=<span class="string">"header"</span>&gt;</span>头部<span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"middle"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"middle_content"</span>&gt;</span></span><br><span class="line">                    middle_content<span class="tag">&lt;<span class="name">br</span>&gt;</span>middle_content<span class="tag">&lt;<span class="name">br</span>&gt;</span>middle_content<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">                    middle_content<span class="tag">&lt;<span class="name">br</span>&gt;</span>middle_content<span class="tag">&lt;<span class="name">br</span>&gt;</span>主内容区域</span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"left"</span>&gt;</span></span><br><span class="line">                left<span class="tag">&lt;<span class="name">br</span>&gt;</span>左侧边栏区域</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"right"</span>&gt;</span></span><br><span class="line">                right<span class="tag">&lt;<span class="name">br</span>&gt;</span>右侧边栏区域</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">footer</span> <span class="attr">id</span>=<span class="string">"footer"</span>&gt;</span>底部<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>实现代码</strong></p>
+<p>参考</p>
+<blockquote>
+<p><a href="https://segmentfault.com/a/1190000012059648" target="_blank" rel="noopener">圣杯布局 vs 双飞翼布局</a></p>
+<p><a href="https://www.cnblogs.com/LiveWithIt/p/6024864.html" target="_blank" rel="noopener">探究负边距（negative margin）原理</a></p>
+<p><a href="https://segmentfault.com/a/1190000013631838" target="_blank" rel="noopener">CSS Flex 布局：用 Flex 来实现圣杯布局</a></p>
+</blockquote>
+<h3 id="两栏布局左栏宽固定右栏自适应"><a class="markdownIt-Anchor" href="#两栏布局左栏宽固定右栏自适应"></a> 两栏布局（左栏宽固定，右栏自适应）</h3>
+<p><img src="../images/HTML%E4%B8%8ECSS%E5%9F%BA%E7%A1%80.assets/%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%EF%BC%88%E5%B7%A6%E6%A0%8F%E5%9B%BA%E5%AE%9A%E5%8F%B3%E6%A0%8F%E8%87%AA%E9%80%82%E5%BA%94%EF%BC%89.png" alt="两栏布局（左栏固定右栏自适应）"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span></span><br><span class="line">    左边固定宽度，高度不固定 <span class="tag">&lt;/<span class="name">br</span>&gt;</span> <span class="tag">&lt;/<span class="name">br</span>&gt;</span><span class="tag">&lt;/<span class="name">br</span>&gt;</span><span class="tag">&lt;/<span class="name">br</span>&gt;</span>高度有可能会很小，也可能很大。</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span></span><br><span class="line">    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。<span class="tag">&lt;/<span class="name">br</span>&gt;</span></span><br><span class="line">    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。<span class="tag">&lt;/<span class="name">br</span>&gt;</span></span><br><span class="line">    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。<span class="tag">&lt;/<span class="name">br</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">	<span class="selector-class">.left</span> &#123;</span></span><br><span class="line"><span class="undefined">  	background: lightgreen;</span></span><br><span class="line"><span class="undefined">  	width: 120px;</span></span><br><span class="line"><span class="undefined">	&#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">	<span class="selector-class">.right</span> &#123;</span></span><br><span class="line"><span class="undefined"> 		 background-color: lightcoral;</span></span><br><span class="line"><span class="undefined">	&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>下面的布局样式都以上面的 html 为例。</p>
+<ol>
+<li><strong>flex布局：</strong></li>
+</ol>
+<p><code>flex</code>可以说是最好的方案了，代码少，使用简单。 <strong>需要注意</strong>的是，<code>flex</code>容器的一个默认属性值:<code>align-items: stretch;</code>。这个属性导致了列等高的效果。 为了让两个盒子高度自动，需要设置: <code>align-items: flex-start;</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">align-items</span>: flex-start;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">background</span>: lightgreen;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">120px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightcoral;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>
+<p><strong><code>float+margin-left</code>方案</strong></p>
+<p><code>block</code> 级别的元素会认为浮动的元素不存在，但是<code>inline</code>级别的元素能识别到浮动的元素。这样，<code>block</code> 级别的元素就可以和浮动的元素同处一行了。 为了让右侧盒子和左侧盒子保持距离，需要为左侧盒子留出足够的距离。这个距离的大小为左侧盒子的宽度以及两个盒子之间的距离之和。然后将该值设置为右侧盒子的<code>margin-left</code>。</p>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>需要清除浮动</li>
+<li>需要计算右侧盒子的<code>margin-left</code></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;		<span class="comment">/*清除浮动*/</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">120px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>使用 <code>float+BFC</code> 方法</strong></p>
+<p>这个方案是利用了左侧浮动，但是右侧盒子通过<code>overflow: auto;</code>形成了BFC，因此右侧盒子不会与浮动的元素重叠。这种情况下，只需要为左侧的浮动盒子设置<code>margin-right</code>，就可以实现两个盒子的距离了。而右侧盒子是<code>block</code>级别的，所以宽度能实现自适应。 <strong>缺点:</strong> <strong>父元素需要清除浮动</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">    <span class="attribute">overflow</span>: auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">    <span class="attribute">overflow</span>: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>使用<code>absolute+margin-left</code>方法</strong></p>
+<p>让两个<code>block</code>排列到一起的方法是对左侧盒子使用<code>position: absolute</code>的绝对定位。这样，右侧盒子也能<strong>无视</strong>掉它。</p>
+<p><strong>缺点:</strong></p>
+<ul>
+<li>使用了绝对定位，若是用在某个div中，需要更改父容器的<code>position</code>。</li>
+<li>没有清除浮动的方法，若左侧盒子高于右侧盒子，就会超出父容器的高度。因此只能通过设置父容器的<code>min-height</code>来放置这种情况。</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">120px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>参考</p>
+<blockquote>
+<p><a href="https://zhuqingguang.github.io/2017/08/16/adapting-two-layout/#" target="_blank" rel="noopener">七种实现左侧固定，右侧自适应两栏布局的方法</a></p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+      <div>
+
+<div style="text-align:center;color: #ccc;font-size:14px;">-------文章到此结束&nbsp;<i class="fa fa-paw"></i>&nbsp;感谢您的阅读-------</div>
+
+</div>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
+          
+            <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i> HTML</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/e859d7a7.html" rel="next" title="CSS3">
+                <i class="fa fa-chevron-left"></i> CSS3
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/102a2b0c.html" rel="prev" title="js的小知识">
+                js的小知识 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="00前的小老弟">
+            
+              <p class="site-author-name" itemprop="name">00前的小老弟</p>
+              <div class="site-description motion-element" itemprop="description">让兴趣变得更专业,让专业变得更兴趣</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">30</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/cheungww" title="GitHub &rarr; https://github.com/cheungww" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:1329105041@qq.com" title="E-Mail &rarr; mailto:1329105041@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#htmlhypertext-markup-language的发展"><span class="nav-text"> HTML（Hypertext Markup Language）的发展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#doctype"><span class="nav-text"> doctype</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#meta"><span class="nav-text"> &lt;meta&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实体"><span class="nav-text"> 实体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器"><span class="nav-text"> 选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择器selector"><span class="nav-text"> 选择器（selector）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪类和伪元素"><span class="nav-text"> 伪类和伪元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#继承"><span class="nav-text"> 继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择器的权重"><span class="nav-text"> 选择器的权重</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#权重的计算"><span class="nav-text"> 权重的计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#权重规则总结"><span class="nav-text"> 权重规则总结:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#权重规则"><span class="nav-text"> 权重规则</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css的内联-外联-嵌套写法"><span class="nav-text"> css的内联、外联、嵌套写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本标签"><span class="nav-text"> 文本标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#em-和-strong"><span class="nav-text"> &lt;em&gt; 和 &lt;strong&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#i-和-b"><span class="nav-text"> &lt;i&gt; 和 &lt;b&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#small"><span class="nav-text"> &lt;small&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cite"><span class="nav-text"> &lt;cite&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#blockquote-和-q"><span class="nav-text"> &lt;blockquote&gt; 和 &lt;q&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sup-和-sub"><span class="nav-text"> &lt;sup&gt;  和 &lt;sub&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ins-和-del"><span class="nav-text"> &lt;ins&gt; 和 &lt;del&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#code-和-pre"><span class="nav-text"> &lt;code&gt; 和 &lt;pre&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表"><span class="nav-text"> 有序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无序列表"><span class="nav-text"> 无序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义列表"><span class="nav-text"> 定义列表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本格式化"><span class="nav-text"> 文本格式化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单位"><span class="nav-text"> 单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#颜色"><span class="nav-text"> 颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十六进制颜色"><span class="nav-text"> 十六进制颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rgb值"><span class="nav-text"> RGB值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rgba"><span class="nav-text"> RGBA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字大小"><span class="nav-text"> 文字大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体一"><span class="nav-text"> 字体(一)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体二"><span class="nav-text"> 字体(二)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体分类"><span class="nav-text"> 字体分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#斜体和粗体"><span class="nav-text"> 斜体和粗体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小型大写字母"><span class="nav-text"> 小型大写字母</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体属性的简写"><span class="nav-text"> 字体属性的简写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行间距"><span class="nav-text"> 行间距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大写化"><span class="nav-text"> 大写化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本的修饰"><span class="nav-text"> 文本的修饰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字母间距和单词间距"><span class="nav-text"> 字母间距和单词间距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对齐文本"><span class="nav-text"> 对齐文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#首行缩进"><span class="nav-text"> 首行缩进</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#盒子模型"><span class="nav-text"> 盒子模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内容区"><span class="nav-text"> 内容区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内边距"><span class="nav-text"> 内边距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边框"><span class="nav-text"> 边框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边框的样式"><span class="nav-text"> 边框的样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#外边距"><span class="nav-text"> 外边距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display"><span class="nav-text"> display</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#visibility"><span class="nav-text"> visibility</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#overflow"><span class="nav-text"> overflow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文档流"><span class="nav-text"> 文档流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动"><span class="nav-text"> 浮动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清除浮动"><span class="nav-text"> 清除浮动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定位"><span class="nav-text"> 定位</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#相对定位relative"><span class="nav-text"> 相对定位(relative)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#绝对定位absolute"><span class="nav-text"> 绝对定位(absolute)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#固定定位fixed"><span class="nav-text"> 固定定位(fixed)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#静态定位static"><span class="nav-text"> 静态定位(static)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#粘性定位sticky"><span class="nav-text"> 粘性定位(sticky)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#z-index"><span class="nav-text"> z-index</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置元素的背景"><span class="nav-text"> 设置元素的背景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#background-color"><span class="nav-text"> background-color</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#background-image"><span class="nav-text"> background-image</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#background-repeat"><span class="nav-text"> background-repeat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#background-position"><span class="nav-text"> background-position</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#background-attachment"><span class="nav-text"> background-attachment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#background"><span class="nav-text"> background</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-sprite"><span class="nav-text"> CSS Sprite</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格"><span class="nav-text"> 表格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#table-tr-th-td"><span class="nav-text"> table、tr、th、td</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#caption-thead-tbody-tfoot"><span class="nav-text"> caption、thead、tbody、tfoot</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并单元格"><span class="nav-text"> 合并单元格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格的样式"><span class="nav-text"> 表格的样式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表单"><span class="nav-text"> 表单</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#表单项"><span class="nav-text"> 表单项</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#input"><span class="nav-text"> input</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#select-option"><span class="nav-text"> select、option</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#textarea"><span class="nav-text"> textarea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fieldset-legend-label"><span class="nav-text"> fieldset、legend、label</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-布局"><span class="nav-text"> CSS 布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#圣杯布局三栏中间自适应两边固定"><span class="nav-text"> 圣杯布局（三栏中间自适应两边固定）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#双飞翼布局三栏中间自适应两边固定"><span class="nav-text"> 双飞翼布局（三栏中间自适应两边固定）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两栏布局左栏宽固定右栏自适应"><span class="nav-text"> 两栏布局（左栏宽固定，右栏自适应）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">00前的小老弟</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">562k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">8:31</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+  <a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank">粤ICP备19129449号</a>
+
+  | <span style="padding-left:25px;background:url(/images/ghs.png) no-repeat left center" rel="nofollow">
+<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502004585" rel="noopener" target="_blank">粤公网安备44030502004585号</a></span>
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.1"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+<script type="text/javascript" src="/custom/fold_action.js?v=7.1.1"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'jvJ2dAabT0aVqK1hUiF09lDk-gzGzoHsz',
+    appKey: 'VGy8poI17GFNJlbk1pbieJ29',
+    placeholder: '来这里到此一游吧！',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('3');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script>
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+  
+
+  
+
+</body>
+</html>
